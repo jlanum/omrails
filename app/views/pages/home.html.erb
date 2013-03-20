@@ -1,0 +1,128 @@
+<% if user_signed_in? %>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+	<h1><font color="#432060">Lavish</font></h1>
+	<p class="muted">San Francisco, CA</p>
+	</div>
+
+      <hr>
+<h3 class="monkey-business">Sales Alerts</h3>
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span3">
+          <h3 class="sale-alerts">Product Metrics</h3>
+          <hr><br> 
+<div id="yolo">
+					
+        </div></div>
+
+<hr>
+        <li class="span3">
+			        <div class="hover-group" style="width:200px;">
+			            <div class="image-wrapper">
+			              <span class="thisInfo"><p class="lanvin">Pliner Boots</p></span><a href="#myModal" data-toggle="modal"><img class="product-pic" src="https://s3.amazonaws.com/mst-images-shared/boots_jesse.png" alt="" height="200px" width="200px"></a>
+						<span class="thisInfo">
+							</span>
+			              <div class="hover-toggle">
+			                <center><span class="percentoff">Next Markdown: April 2</span></center>
+
+			              </div>
+			            </div>
+
+
+			    </li>
+
+				<li class="span3">
+			        <div class="hover-group" style="width:200px;">
+			            <div class="image-wrapper">
+			              <span class="thisInfo"><p class="lanvin">Flores Pillow</p></span><a href="#myModal" data-toggle="modal"><img class="product-pic" src="https://s3.amazonaws.com/mst-images-shared/perfume_jesse.png" alt=""></a>
+						<span class="thisInfo">
+							</span>
+			              <div class="hover-toggle">
+			                <center><span class="percentoff">Next Markdown: April 2</span></center>
+
+			              </div>
+			            </div>
+
+
+			    </li>
+
+				<li class="span3">
+			        <div class="hover-group" style="width:200px;">
+			            <div class="image-wrapper">
+			              <span class="thisInfo"><p class="lanvin">Zac Posen</p></span><a href="#myModal" data-toggle="modal"><img class="product-pic" src="https://s3.amazonaws.com/mst-images-shared/dress_jesse.png" alt=""></a>
+						<span class="thisInfo">
+							</span>
+			              <div class="hover-toggle">
+			                <center><span class="percentoff">Next Markdown: April 2</span></center>
+
+			              </div>
+			            </div>
+
+			        </div>
+			    </li>
+			</div>
+		
+     
+
+						
+						
+						
+						<div id="yoda">
+
+						        </div>
+<br><br><br><br><br>
+      
+
+    </div> <!-- /container -->
+
+
+<% else %>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h2><font color="#432060">Optimize Discount Sale Pricing </font></h2>
+    <p>MySaleTable Dashboard helps shops and stores optimize discount sale pricing by providing insight into industry data, relative store metrics, <br>and cross-market communication. Because information changes everything.
+</p>
+    <%= link_to 'Start Now',  new_user_registration_path, class: "btn btn-large btn-purple" %>
+  </div>
+
+  <hr>
+
+  <!-- Example row of columns -->
+  <div class="row-fluid">
+    <div class="span4">
+      <h3>Silver</h3>
+      <li>Information on (10) products</li>
+  <li>Sale cycle pricing products</li>
+  <li>Limited access to community board</li>
+<br>
+      <p><%= link_to 'Start Now',  new_user_registration_path, class: "btn btn-purple" %></p>
+    </div>
+    <div class="span4">
+      <h3>Platinum</h3>
+      <li>Information on (50) products</li>
+  <li>Sale cycle pricing alerts</li>
+  <li>Comparative pricing details for (3) stores</li>
+  <li>Unlimited access to community board</li>
+	<br>
+      <p><%= link_to 'Start Now',  new_user_registration_path, class: "btn btn-purple" %></p>
+   </div>
+    <div class="span4">
+      <h3>Gold</h3>
+      <li>Information on (100) products</li>
+      <li>Sale cycle pricing alerts</li>
+      <li>Comparative pricing details for (10) stores</li>
+      <li>Pricing simulation and optimization scenarios </li>
+      <li>Unlimited access to community board</li>
+<br>
+      <p><%= link_to 'Start Now',  new_user_registration_path, class: "btn btn-purple" %></p>
+    </div>
+  </div>
+
+  <hr>
+
+ 
+</div> <!-- /container -->
+<% end %>

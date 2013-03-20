@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.masonry.min.js
+//= require hicharts.js
+//= require hichartstwo.js
+//= require highcharts
+//= require highcharts/highcharts-more
 //= require bootstrap
 //= require_tree .

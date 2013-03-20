@@ -1,32 +1,60 @@
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-             <%= link_to "One Month Rails", root_path, class: "brand" %>
+		<% if user_signed_in? %>
+			<div class="container">
 
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li>
-                            <%= link_to "Home", root_path %>
-                        </li>
-                        <li>    
-                            <%= link_to 'About',  about_path %>
-                        </li>
-                    </ul>
-                    <ul class="nav pull-right">
-											<% if user_signed_in? %>
-											<li><%= link_to 'Add+',  new_pin_path %></li>
-											 <li><%= link_to 'Edit Profile',  edit_user_registration_path %></li>
-                       <li><%= link_to 'Logout',  destroy_user_session_path, method: :delete %></li>
+	      <div class="masthead">
+	        <h3 class="muted"><img src="https://mst-assets-production.s3.amazonaws.com/assets/Logo_Website_v2-e6c5b444f5b0ffede152bb5abdaf5dff.png"> Dashboard</h3>
+	        <div class="navbar">
+	          <div class="navbar-inner">
+	            <div class="container">
+	              <ul class="nav">
+	                <li class="active"><a href="#">Home</a></li>
+	                <li><a href="#">Sale Alerts</a></li>
+	                <li><a href="#">Products</a></li>
+	                <li><a href="#">Stores</a></li>
+	                <li><%= link_to 'Edit Profile',  edit_user_registration_path %></li>
+									<li><%= link_to 'Logout',  destroy_user_session_path, method: :delete %></li>
+	              </ul>
+	            </div>
+	          </div>
+	        </div><!-- /.navbar -->
+	      </div>
+			
+											 
 												<% else %>
-											 <li><%= link_to 'Login',  new_user_session_path %></li>
-											  <% end %>
-                    </ul>
-                </div>
-        </div>
-    </div>
-</div>
+											 	
+												<div class="container">
+
+										      <div class="masthead">
+										        <h3 class="muted"><img src="https://mst-assets-production.s3.amazonaws.com/assets/Logo_Website_v2-e6c5b444f5b0ffede152bb5abdaf5dff.png"> Dashboard</h3>
+										        <div class="navbar">
+										          <div class="navbar-inner">
+										            <div class="container">
+										              <ul class="nav">
+										                <li class="active"><a href="#">Join</a></li>
+										                <li><a href="#">Learn More</a></li>
+										                <li><a href="#">Contact</a></li>
+										                <li><a href="#">About</a></li>
+										                <li><a href="#">Marketplace</a></li>
+										                <li><%= link_to 'Login',  new_user_session_path %></li>
+										              </ul>
+										            </div>
+										          </div>
+										        </div><!-- /.navbar -->
+										      </div>		  
+											
+											
+											
+											
+											
+											<% end %>
+                    
+
+
+
+
+
+
+
+
+
+
