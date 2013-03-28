@@ -1,0 +1,26 @@
+
+  <div class="span9">
+<div class="marketing contact">
+  <p><font size="8">Contact</font></p>
+  <h4>Send us a message</h4>
+  <%= form_tag(contact_url, :method => "post") do |f| %>
+  <fieldset>
+
+    <label>Your Name *</label>
+    <input name="name" type="text" placeholder="Type here">
+  </fieldset>
+  <fieldset>
+
+    <label>Email *</label>
+    <input name="email" type="text" placeholder="Type something">
+  </fieldset>
+  <fieldset>
+
+    <label>Subject *</label>
+    <input name="subject" type="text" placeholder="Type something">
+  </fieldset>
+  <label>Message *</label>
+  <textarea name="message" rows="10" class="span9"></textarea><br>
+  <button type="submit" class="btn btn-large btn-purple">Submit</button>
+<% end %>
+</div>

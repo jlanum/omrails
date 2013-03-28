@@ -205,11 +205,41 @@ color:#432060;
 			}
 			.footer {
 				background-color: #f5f5f5;
-				padding: 5px;
+				padding: 14px;
 			}
 			.heading-graphics {
 				text-align:center;
 			}
+			
+			/* About Us Page
+			    -------------------------------------------------- */
+
+					.image-text {
+						position:relative;
+					  max-height:316px;
+					}
+
+					.image-text .aboutusus {
+						text-align:center;
+						top:32px;
+					        right:-9px;
+						position:absolute; 
+						vertical-align:middle;
+						width:100%;
+						display:block;
+
+					}
+			    
+					.modal-backdrop {
+					  position: fixed;
+					  top: 0;
+					  right: 0;
+					  bottom: 0;
+					  left: 0;
+					  z-index: 1040;
+					  background-color: #FFFFFF !important;
+
+					}
 
 .footer {
 margin-top: 50px;
