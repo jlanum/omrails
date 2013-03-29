@@ -16,6 +16,7 @@
   }
   .container > hr {
     margin: 15px 0;
+		border-top: 1px solid #bdbdbd !important;
   }
   .sale-alerts > hr {
    margin: -4px 0;
@@ -323,6 +324,13 @@ color:#432060;
 							font-size: 15px;
 							margin-top: -23px;
 					}
+					
+					.blog-line {
+						 padding:14px;
+						 background-color:#f5f5f5;
+						 text-align:center;
+					}
+					
 .footer {
 margin-top: 50px;
 color: $grayLight;
