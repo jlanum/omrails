@@ -240,7 +240,77 @@ color:#432060;
 					  background-color: #FFFFFF !important;
 
 					}
+					
+					/* Pricing Page
+					    -------------------------------------------------- */
+					.pricing-table {
+						box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+					}
+					
+					.pricing-table .pricing-box {
+						margin-left: 0px;
+						text-align: center;
+						width: 33.3333333333%;
+					
+					}
+					
+					.pricing-table .tier-name {
+						background-color: #432060;
+						color: white;
+						padding: 10px 20px;
+						text-transform: uppercase;
+						margin-top: 0;
+						margin-bottom: 0;
+						font-weight: normal;
+						font-size: 20px;
+						letter-spacing: 2px;
+	          }
+	
+					.pricing-table .tier-desc {
+							height: 220px;
+							padding: 12px 24px;
+							color: #432060;
+							font-family: myriad-pro;
+							font-weight: lighter;
+							font-size: 20px;
+							line-height: normal;
+							border-left: 2px solid #F6F2E6;
+							background: #fffbea;
+							background: -moz-radial-gradient(center, ellipse cover, #fffbea 0%, #e8e5d5 100%);
+							background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fffbea), color-stop(100%, #e8e5d5));
+							background: -webkit-radial-gradient(center, ellipse cover, #fffbea 0%, #e8e5d5 100%);
+							background: -o-radial-gradient(center, ellipse cover, #fffbea 0%, #e8e5d5 100%);
+							background: -ms-radial-gradient(center, ellipse cover, #fffbea 0%, #e8e5d5 100%);
+							background: radial, 50% 50%, ellipse at center, #fffbea 0%, #e8e5d5 100%;
+					}
 
+					.pricing-table .dollar-amount {
+							margin-top: -28px;
+							margin-bottom: 15px;
+					}
+					
+					.pricing-table .dollar-amount .dollar {
+							position: relative;
+							display: inline-block;
+							top: -68px;
+							font-size: 25px;
+							left: 6px;
+							margin-left: -32px;
+					}
+					
+					.pricing-table .dollar-amount .amount {
+							display: inline-block;
+							position: relative;
+							font-size: 122px;
+							letter-spacing: -13px;
+					}
+					
+					.pricing-table .dollar-amount .month {
+							text-transform: uppercase;
+							display: block;
+							font-size: 15px;
+							margin-top: -23px;
+					}
 .footer {
 margin-top: 50px;
 color: $grayLight;
