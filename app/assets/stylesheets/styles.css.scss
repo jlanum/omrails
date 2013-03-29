@@ -1,7 +1,7 @@
 
 @import 'bootstrap';
 
-@import 'bootstrap-responsive';
+
 
 
   body {
@@ -134,7 +134,7 @@ color:#432060;
 
 	    /* Carousel base class */
 	    .carousel {
-	      margin-bottom: 30px;
+	      margin-bottom: 22pxpx;
 	    }
 
 	    .carousel .container {
@@ -186,12 +186,24 @@ color:#432060;
 	    .lead {
 			  margin: auto;
 	     }
-	    .carousel-caption .btn {
-	      margin-top: 47px;
-	      width: 100px;
-	      margin-left: 79px;
-	      
-	    }
+	    	.carousel-caption .btn-one {
+		      margin-top: 47px;
+					width: 100px;
+					margin-left: 35px;
+					position: absolute;
+					display: block;
+					
+		      
+		    }
+		
+		    .carousel-caption .btn-two {
+		      margin-top: 135px;
+					width: 100px;
+					margin-left: 36px;
+					position: absolute;
+					display: block;
+		      
+		    }
 	    
 	    .asfeatured {
 				font-size:x-large;
@@ -199,7 +211,7 @@ color:#432060;
 				margin-top: 20px;
 
 			}
-			.press-pass {
+			.press-passes {
 				margin-left: 0px;
 				font-size:21.5px;
 			}
