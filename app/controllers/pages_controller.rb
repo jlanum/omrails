@@ -10,4 +10,7 @@ class PagesController < ApplicationController
     
   def pricing
     end
+    
+  def works
+    end
 end
