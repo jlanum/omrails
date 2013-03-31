@@ -35,7 +35,7 @@
 																		<li class="<%= 'active' if current_page?(pricing_path) %>"><%= link_to "Pricing", pricing_path %></li>
 										                
 										                <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About Us", about_path %></li>
-										                <li><%= link_to "Market", "http://www.mysaletable.com" %></li>
+										                <li><%= link_to "Market", "http://www.mysaletable.com", :target => "_blank" %></li>
 										                <li class="<%= 'active' if current_page?(new_user_session_path) %>"><%= link_to 'Login',  new_user_session_path %></li>
 										              </ul>
 										            </div>

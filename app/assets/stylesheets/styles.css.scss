@@ -188,7 +188,7 @@ color:#432060;
 			  margin: auto;
 	     }
 	    	.carousel-caption .btn-one {
-		      margin-top: 47px;
+		      margin-top: 57px;
 					width: 100px;
 					margin-left: 35px;
 					position: absolute;
@@ -198,7 +198,7 @@ color:#432060;
 		    }
 		
 		    .carousel-caption .btn-two {
-		      margin-top: 135px;
+		      margin-top: 151px;
 					width: 100px;
 					margin-left: 36px;
 					position: absolute;
@@ -400,6 +400,10 @@ color:#432060;
 						color:#333
 					}
 					
+					.blog-graphic-position {
+					  vertical-align: text-bottom;
+					}
+					
 					.product-page-sign-up-btn {
 					margin-top: -80px;
 					}
@@ -433,7 +437,7 @@ color:#432060;
 							text-decoration:none;
 					}
 .footer {
-margin-top: 25px;
+margin-top: 20px;
 color: $grayLight;
     a {
 color: $gray;
