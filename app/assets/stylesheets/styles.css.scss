@@ -281,7 +281,7 @@ color:#432060;
 	
 					.pricing-table .tier-desc {
 							height: 220px;
-							padding: 12px 24px;
+							padding: 12px 10px;
 							color: #432060;
 							font-weight: lighter;
 							font-size: 14px;
@@ -390,6 +390,18 @@ color:#432060;
 					margin-top: 40px;
 					}
 					
+					.how-it-works-paragraph {
+					
+					font-family: "Helvetica Neue", Helvetica, Arial;
+					font-weight: lighter;
+					font-size: 18px;
+					line-height: normal;
+					
+					}
+					
+					.check-mark {
+					list-style:none;
+					}
 					.cl{
 					 clear:both;
 					}
@@ -411,8 +423,16 @@ color:#432060;
 					
 					.product-page-sign-up-btn {
 					margin-top: -80px;
+					margin-left:435px;
 					}
 					
+					.next-steps {
+					  margin-left:75px;
+					}
+					
+					.stopwatch {
+					  margin-left:88px;
+					}
 					.fr {
 					float: right;
 					}
@@ -440,6 +460,27 @@ color:#432060;
 					.contact-button a {
 							color: #333;
 							text-decoration:none;
+					}
+					
+					.main .icon {
+					width: 100px;
+					}
+					
+					.main .section-break {
+					margin: 15px auto 25px;
+					height: 2px;
+					width: 60%;
+					background-color: white;
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, #91a1ab), color-stop(100%, white));
+					background-image: -webkit-linear-gradient(left, white 0%, #91a1ab 50%, white 100%);
+					background-image: -moz-linear-gradient(left, white 0%, #91a1ab 50%, white 100%);
+					background-image: -ms-linear-gradient(left, white 0%, #91a1ab 50%, white 100%);
+					background-image: -o-linear-gradient(left, white 0%, #91a1ab 50%, white 100%);
+					background-image: linear-gradient(left, white 0%, #91a1ab 50%, white 100%);
+					}
+					
+					.center {
+					text-align:center;
 					}
 .footer {
 margin-top: 20px;
