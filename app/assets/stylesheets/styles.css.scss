@@ -214,7 +214,7 @@ color:#432060;
 			}
 			.press-passes {
 				margin-left: 0px;
-				font-size:21.5px;
+				font-size:15.5px;
 			}
 			.footer {
 				background-color: #f5f5f5;
@@ -314,7 +314,7 @@ color:#432060;
 							display: inline-block;
 							position: relative;
 							font-size: 122px;
-							letter-spacing: -13px;
+							letter-spacing: -6px;
 					}
 					
 					.pricing-table .dollar-amount .month {
@@ -336,10 +336,15 @@ color:#432060;
 					line-height: normal;
 					color: #666;
 					margin-top: 0;
+					margin-left: 53px;
 					}
 					
 					.please-integrate-blurb {
 					margin-bottom: 0;
+					}
+					
+					.please-sign-up-section h2 {
+					margin-left: 53px;
 					}
 					
 					.questions {
@@ -373,6 +378,7 @@ color:#432060;
 					
 					.section.please-sign-up-section .sign-up-btn {
 					margin-top: -89px;
+					margin-right:53px;
 					}
 					
 					.section.please-sign-up-section {
