@@ -1,4 +1,24 @@
+<% if user_signed_in? %>
 
+<div class="jumbotron">
+<h1><font color="#432060"><%= current_user.name %></font></h1>
+<p class="muted">San Francisco, CA</p>
+</div>
+
+
+<div class="span2">
+	<img src="/assets/lightbulb.png">
+	<br><br><br>
+	<img src="/assets/badge.png">
+	<br><br><br>
+	<img src="/assets/stopwatch.png">
+</div>
+<div class="span8">
+
+<%= render 'pages/agenda' %>
+</div>
+</div>
+<% else %>
  	<!-- Carousel
 	    ================================================== -->
 	    <div id="myCarousel" class="carousel slide">
@@ -89,6 +109,6 @@
    <!-- /END THE FEATURETTES -->
 
 
-   
+   <% end %>
 
 

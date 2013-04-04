@@ -1,5 +1,10 @@
 Omrails::Application.routes.draw do
 
+  resource :calendar, :only => [:show]
+
+  resources :events
+
+
   resources :pins
 
 
@@ -11,6 +16,8 @@ Omrails::Application.routes.draw do
   get 'contact' => 'pages#contact'
   get 'pricing' => 'pages#pricing'
   get 'works' => 'pages#works'
+  get 'show' => 'calendars#show'
+
 
 end
   

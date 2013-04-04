@@ -13,4 +13,7 @@ class PagesController < ApplicationController
     
   def works
     end
+    
+  def calendar
+  end
 end

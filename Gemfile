@@ -6,6 +6,8 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem "highcharts-rails", "~> 2.3.0"
+gem 'jquery-rest-rails'
+gem 'fullcalendar-rails'
 
 
 group :production do

@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
+//= require jquery.rest
+//= require fullcalendar
 //= require highchartscode.js
 //= require highcharts-more.js
 //= require bootstrap
