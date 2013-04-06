@@ -17,6 +17,9 @@ Omrails::Application.routes.draw do
   get 'pricing' => 'pages#pricing'
   get 'works' => 'pages#works'
   get 'show' => 'calendars#show'
+  
+  match 'calculate' => 'pages#calculate'
+  
 
 
 end

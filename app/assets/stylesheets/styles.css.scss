@@ -512,6 +512,92 @@ color:#432060;
 					.login-form-join-link a{
 					  color:#333;
 					}
+				
+					/* Login Home
+					    -------------------------------------------------- */
+					
+					.right-product-table {
+					  padding-right:63px;
+					}
+					.calculator input, textarea, .uneditable-input {
+					width: 180px;
+					}
+					
+					.calendar-width-margin {
+					 margin-left: 26%;
+					width: 700px;
+					margin-top: -383px;
+					}
+					
+					.calculator {
+					  width: 196px;
+						height: 274px;
+						border: thin solid #bdbdbd;
+						margin-top: 0px;
+					}
+					
+					.calculator-unit {
+					padding: 5px 16px;
+					margin-bottom: 30px;
+					font-size: 18px;
+					font-weight: 200;
+					line-height: 30px;
+					color: inherit;
+					background-color: #eeeeee;
+					-webkit-border-radius: 6px;
+					-moz-border-radius: 6px;
+					border-radius: 6px;
+					}
+					
+					.calc-header {
+					letter-spacing: 2px;
+					text-align: center;
+					padding-top: 1px;
+					padding-bottom: 0px !important;
+					}
+					
+					.btn-calc {
+					vertical-align:5px;
+					margin-left: 6px;
+					}
+					
+					.product-table1 {
+					margin-top: 0px;
+					width: 362px;
+					margin-left:26%;
+					}
+					
+					.product-table2 {
+					margin-left: 65%;
+					margin-top: -205px;
+					width: 336px;
+					
+					}
+					
+					.section.store-name-section {
+					border-top: 3px double #e6e7e2;
+					border-bottom: 3px double #e6e7e2;
+					margin-bottom: 75px;
+					margin-top: 17px;
+					}
+					
+					.calc-position {
+					margin-top:10px;
+					}
+					
+					.calculator > hr {
+					box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+					} 
+					
+					.product-table1 th {
+					background-color:#432060;
+					color:white;
+					}
+					
+					.product-table2 th {
+					background-color:#432060;
+					color:white;
+					}
 .footer {
 margin-top: 20px;
 color: $grayLight;
