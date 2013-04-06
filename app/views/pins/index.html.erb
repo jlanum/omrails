@@ -1,7 +1,56 @@
-<h1><%= current_user.name %>'s Products</h1>
+<div class="section store-name-section">
+<div class="jumbotron">
+<h1><font color="#432060"><%= current_user.name %></font></h1>
+<p class="muted">San Francisco, CA</p>
+</div>
+</div>
+<div class="calc-position">
+<div class="calculator-unit calculator">
+<p class="calc-header">Margin Calculator</p>
+<hr>
+<%= form_tag('/calculate') do %>
 
+    <%= text_field_tag(:f,  "Initial Cost") %>
+
+   <label class="checkbox">
+		      <input type="checkbox"> Seasonal item?
+		    </label>
+
+    <%= text_field_tag(:s,  "Enter Multiplier") %>
+  
+
+    <%= text_field_tag(:r, @result, :disabled => true) %>
+		
+    <%= submit_tag("Calculate", class: "btn btn-purple btn-calc")  %>
+	
+<% end %>
+</div>
+</div>
+<div class="calendar-width-margin section">
+
+<%= render 'pages/agenda' %>
+</div>
+</div>
+
+<h3><%= current_user.name %>'s Products</h3>
+<div class="product-table3">
+<table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  
+                  <th>Brand</th>
+                  <th>Description</th>
+									<th>Product</th>
+									<th>Price</th>
+                  <th>Update</th>
+									<th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
     
 	
 		<%= render @pins %>
-
-<%= link_to 'New', new_pin_path %>
+	</tbody>
+	</table>
+	</div>
+<%= link_to 'Add New', new_pin_path %>
