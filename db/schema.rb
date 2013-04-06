@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404041242) do
+ActiveRecord::Schema.define(:version => 20130406193819) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
@@ -32,8 +32,14 @@ ActiveRecord::Schema.define(:version => 20130404041242) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "product"
+    t.string   "brand"
+    t.integer  "price"
   end
 
+  add_index "pins", ["brand"], :name => "index_pins_on_brand"
+  add_index "pins", ["price"], :name => "index_pins_on_price"
+  add_index "pins", ["product"], :name => "index_pins_on_product"
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
 
   create_table "users", :force => true do |t|

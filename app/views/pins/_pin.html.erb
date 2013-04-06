@@ -1,18 +1,32 @@
-
- <div class="box"> 
-		<%= link_to (image_tag pin.image(:medium)), pin %>
-	<p class="description">
-   <%= pin.description %>
-	</p>
-	<p>
-		<strong>
-			Posted by <%= pin.user.name %>
-		<strong>
-   
+<div class="product-table3">
+<table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Store</th>
+                  <th>Brand</th>
+                  <th>Description</th>
+									<th>Product</th>
+									<th>Price</th>
+                  <th>Update</th>
+									<th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+	  <td><%= pin.user.name %></td>
+	  <td><%= pin.brand %></td>
+		<td><%= pin.description %></td>
+		<td><%= pin.product %></td>
+		<td><%= pin.price %></td>
 		<% if current_user = pin.user %>
-	<p>
-   <%= link_to 'Edit', edit_pin_path(pin) %>
-    <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-	</p>
+		<td> <%= link_to 'Edit', edit_pin_path(pin) %></td>
+		<td><%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		<% end %>
-</div> 
+	  
+ </tr>
+</tbody>
+</table>
+</div>
+   
+		
+ 
