@@ -1,5 +1,7 @@
 Omrails::Application.routes.draw do
 
+  devise_for :admins
+
   resource :calendar, :only => [:show]
 
   resources :events
