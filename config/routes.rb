@@ -1,6 +1,6 @@
 Omrails::Application.routes.draw do
 
-  devise_for :admins
+  devise_for :users
 
   resource :calendar, :only => [:show]
 
@@ -10,8 +10,9 @@ Omrails::Application.routes.draw do
   resources :pins
 
 
-  devise_for :users
   
+  
+  devise_for :admins
 
   root :to => 'pages#home'
   get 'about' => 'pages#about'
