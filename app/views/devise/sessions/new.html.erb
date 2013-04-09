@@ -10,6 +10,11 @@
   <%= f.input :remember_me, as: :boolean %>
 
   
-  <div class="form-actions"><%= f.submit "Sign in", class: "btn btn-purple" %></div>
+  <%= f.submit "Login", class: "btn btn-purple" %>
 <% end %>
-
+New to MySaleTable? Create an account to manage your business more profitably.
+<div class="form-actions">
+<div class="login-form-join-link btn btn-purple">
+<%= render "devise/shared/links" %>
+</div>
+</div>

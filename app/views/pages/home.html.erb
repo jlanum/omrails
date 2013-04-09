@@ -8,15 +8,12 @@
 </div>
 <div class="calc-position">
 <div class="calculator-unit calculator">
-<p class="calc-header">Margin Calculator</p>
+<p class="calc-header">Optimize Margin</p>
 <hr>
 <%= form_tag('/calculate') do %>
 
     <%= text_field_tag(:f,  "Initial Cost") %>
 
-   <label class="checkbox">
-		      <input type="checkbox"> Seasonal item?
-		    </label>
 
     <%= text_field_tag(:s,  "Enter Multiplier") %>
   
@@ -128,11 +125,11 @@
 	          <div class="container">
 	            <div class="carousel-caption">
 	              <h2></h2>
-	              <%= link_to 'Free',  root_path, class: "btn btn-large btn-purple btn-one" %>
+	              <%= link_to 'Free',  new_user_registration_path, class: "btn btn-large btn-purple btn-one" %>
 								<p class="lead"></p>
-								<%= link_to 'Basic',  root_path, class: "btn btn-large btn-purple btn-two" %>
+								<%= link_to 'Basic',  new_user_registration_path, class: "btn btn-large btn-purple btn-two" %>
 								<p class="lead"></p>
-								<%= link_to 'Professional',  root_path, class: "btn btn-large btn-purple btn-three" %>
+								<%= link_to 'Professional',  new_user_registration_path, class: "btn btn-large btn-purple btn-three" %>
 	            </div>
 	          </div>
 	        </div>

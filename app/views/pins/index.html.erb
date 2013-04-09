@@ -6,33 +6,29 @@
 </div>
 <div class="calc-position">
 <div class="calculator-unit calculator">
-<p class="calc-header">Margin Calculator</p>
+<p class="calc-header">Optimize Margin</p>
 <hr>
 <%= form_tag('/calculate') do %>
 
     <%= text_field_tag(:f,  "Initial Cost") %>
 
-   <label class="checkbox">
-		      <input type="checkbox"> Seasonal item?
-		    </label>
 
     <%= text_field_tag(:s,  "Enter Multiplier") %>
   
 
     <%= text_field_tag(:r, @result, :disabled => true) %>
-		
+		<br>	<br>
     <%= submit_tag("Calculate", class: "btn btn-purple btn-calc")  %>
 	
 <% end %>
 </div>
 </div>
 <div class="calendar-width-margin section">
-
 <%= render 'pages/agenda' %>
 </div>
 </div>
 
-<h3><%= current_user.name %>'s Products</h3>
+<h3><%= current_user.name %>'s Products</h3><%= link_to 'Add New', new_pin_path %>
 <div class="product-table3">
 <table class="table table-bordered table-striped">
               <thead>
@@ -40,8 +36,9 @@
                   
                   <th>Brand</th>
                   <th>Description</th>
-									<th>Product</th>
-									<th>Price</th>
+									<th>Cost</th>
+									<th>On Sale</th>
+									<th>First Markdown</th>
                   <th>Update</th>
 									<th>Delete</th>
                 </tr>
@@ -53,4 +50,3 @@
 	</tbody>
 	</table>
 	</div>
-<%= link_to 'Add New', new_pin_path %>

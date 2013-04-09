@@ -1,10 +1,9 @@
 class Pin < ActiveRecord::Base
-  attr_accessible :description, :product, :brand, :price
+  attr_accessible :description, :brand, :price, :markdown, :markprice
   
   
   validates :description, presence: true
   validates :user_id, presence: true
-  validates :product, presence: true
   validates :brand, presence: true
   validates :price, presence: true
   

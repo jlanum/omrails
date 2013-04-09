@@ -3,8 +3,9 @@
 	  
 	  <td><%= pin.brand %></td>
 		<td><%= pin.description %></td>
-		<td><%= pin.product %></td>
-		<td><%= pin.price %></td>
+		<td><%= number_to_currency(pin.price) %></td>
+		<td><%= pin.markdown %></td>
+		<td><%= (pin.markdown + 10) if pin.markdown %></td>
 		<% if current_user = pin.user %>
 		<td> <%= link_to 'Edit', edit_pin_path(pin) %></td>
 		<td><%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>

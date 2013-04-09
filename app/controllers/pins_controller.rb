@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   # GET /pins.json
   def index
     @pins = current_user.pins.order("created_at desc")
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }

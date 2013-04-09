@@ -55,8 +55,9 @@ html .fc,
 	}
 	
 .fc-header-title h2 {
-	margin-top: 0;
+	margin-top: -18px;
 	white-space: nowrap;
+	
 	}
 	
 .fc .fc-header-space {

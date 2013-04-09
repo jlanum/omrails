@@ -4,19 +4,20 @@
                 <tr>
                   <th>Store</th>
                   <th>Brand</th>
-                  <th>Product</th>
                   <th>Description</th>
 									<th>Price</th>
+									<th>Markdown</th>
+									<th>Markdown First</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-	  <td>	<%= @pin.user.name %></td>
+	  <td><%= @pin.user.name %></td>
 	  <td><%= @pin.brand %></td>
-		
-		<td>	<%= @pin.product %></td>
 		<td><%= @pin.description %></td>
-		<td><%= @pin.price %></td>
+		<td><%= number_to_currency(@pin.price) %></td>
+		<td><%= @pin.markdown %></td>
+		<td><%= markprice = @pin.markdown + 27 %></td>
 	  </tbody>
   		
 

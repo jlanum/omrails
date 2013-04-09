@@ -1,4 +1,5 @@
 class Event < ActiveRecord::Base
+  attr_accessible :title, :start, :end, :allDay, :description, :id
   scope :between, lambda {|start_time, end_time|
     {:conditions => ["? < starts_at < ?", Event.format_date(start_time), Event.format_date(end_time)] }
   }

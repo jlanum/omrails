@@ -2,9 +2,9 @@ $(document).ready ->
   $('#calendar').fullCalendar
     editable: true,
     header:
-      left: 'prev,next today',
+      left: ''
       center: 'title',
-      right: 'month,agendaWeek,agendaDay'
+      right: 'prev,next today',
     defaultView: 'month',
     height: 330,
     slotMinutes: 30,

@@ -1,8 +1,10 @@
 class PagesController < ApplicationController
   def home
-    
+    if user_signed_in?
+    redirect_to pins_url
+  else
       @result = ''
-
+    end
   end
 
   def about
