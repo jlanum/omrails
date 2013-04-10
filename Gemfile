@@ -8,7 +8,7 @@ gem "paperclip", "~> 3.0"
 gem "highcharts-rails", "~> 2.3.0"
 gem 'jquery-rest-rails'
 gem 'fullcalendar-rails'
-
+gem 'json'
 
 group :production do
   gem 'pg'

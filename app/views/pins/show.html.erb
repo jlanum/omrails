@@ -1,4 +1,4 @@
-<div class="product-table3">
+<div class="product-table-show">
 <table class="table table-bordered table-striped">
               <thead>
                 <tr>
@@ -7,7 +7,6 @@
                   <th>Description</th>
 									<th>Price</th>
 									<th>Markdown</th>
-									<th>Markdown First</th>
                 </tr>
               </thead>
               <tbody>
@@ -15,9 +14,8 @@
 	  <td><%= @pin.user.name %></td>
 	  <td><%= @pin.brand %></td>
 		<td><%= @pin.description %></td>
-		<td><%= number_to_currency(@pin.price) %></td>
-		<td><%= @pin.markdown %></td>
-		<td><%= markprice = @pin.markdown + 27 %></td>
+		<td><%= number_to_currency(@pin.price * 2.5) %></td>
+		<td><%= markprice = @pin.markdown - 42 %></td>
 	  </tbody>
   		
 

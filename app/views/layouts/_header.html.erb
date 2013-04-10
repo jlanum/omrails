@@ -13,6 +13,7 @@
 	                
 	                <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About Us", about_path %></li>
 	                <li><%= link_to "Market", "http://www.mysaletable.com", :target => "_blank" %></li>
+									<li><%= link_to "Blog", "http://www.mysaletable.tumblr.com", :target => "_blank" %></li>
 	                <li class="<%= 'active' if current_page?(edit_user_registration_path) %>"><%= link_to 'Edit Profile',  edit_user_registration_path %></li>
 									<li class="<%= 'active' if current_page?(destroy_user_session_path) %>"><%= link_to 'Logout',  destroy_user_session_path, method: :delete %></li>
 	              </ul>

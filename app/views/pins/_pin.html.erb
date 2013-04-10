@@ -1,18 +1,20 @@
 
-                <tr>
-	  
-	  <td><%= pin.brand %></td>
+    <tr>
+	  <td><%= pin.brand  %></td>
 		<td><%= pin.description %></td>
-		<td><%= number_to_currency(pin.price) %></td>
-		<td><%= pin.markdown %></td>
-		<td><%= (pin.markdown + 10) if pin.markdown %></td>
+		<td><%= number_to_currency(pin.price * 2.5) if pin.price %></td>
+		<% if (pin.markdown - 42) > Date.today %>
+	  <td>First Markdown: <%=  (pin.markdown - 42).strftime("%a, %B %d") %> </td>
+		    <% else %>
+		    <td> Second Markdown: <%= (pin.markdown - 28).strftime("%a, %B %d") %></td>
+				<% end %>
 		<% if current_user = pin.user %>
 		<td> <%= link_to 'Edit', edit_pin_path(pin) %></td>
 		<td><%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		<% end %>
-	  
+		
  </tr>
 
-   
+   		
 		
  

@@ -3,12 +3,18 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-    @pins = current_user.pins.order("created_at desc")
+    @pins = current_user.pins.order("markdown asc")
     
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
     end
+  end
+  
+  def calculate
+    @result = params[:f].to_i * 2.5
+    render :action => :index
+   
   end
 
   # GET /pins/1
@@ -82,3 +88,6 @@ class PinsController < ApplicationController
     end
   end
 end
+
+
+  

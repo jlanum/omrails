@@ -1,9 +1,10 @@
 class PagesController < ApplicationController
   def home
-    if user_signed_in?
-    redirect_to pins_url
-  else
-      @result = ''
+    
+    @pins = Pin.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @pins }
     end
   end
 
@@ -24,10 +25,11 @@ class PagesController < ApplicationController
   
   def calculate
   
-    @result = params[:f].to_i * params[:s].to_i
+   
   
-    render :action => :home
+    render :action => :pins_url
   
-  end
+    end
+  
   
 end

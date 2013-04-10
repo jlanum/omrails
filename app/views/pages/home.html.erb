@@ -6,115 +6,30 @@
 <p class="muted">San Francisco, CA</p>
 </div>
 </div>
-<div class="calc-position">
-<div class="calculator-unit calculator">
-<p class="calc-header">Optimize Margin</p>
-<hr>
-<%= form_tag('/calculate') do %>
+<img src="/assets/tumblr_inline.png" class="tumblr-inline">
+<div class="product-table3">
+<h3>Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h3>
 
-    <%= text_field_tag(:f,  "Initial Cost") %>
+<table class="table">
+              
+              <tbody>
+		<%= render current_user.pins.limit(5).order("markdown asc") %> 
+	</tbody>
+	</table>
+	</div>
 
-
-    <%= text_field_tag(:s,  "Enter Multiplier") %>
-  
-
-    <%= text_field_tag(:r, @result, :disabled => true) %>
-		
-    <%= submit_tag("Calculate", class: "btn btn-purple btn-calc")  %>
-	
-<% end %>
-</div>
-</div>
 <div class="calendar-width-margin section">
-
-<%= render 'pages/agenda' %>
+	<%= link_to "new event", new_event_path %>
+<div id='calendar'></div>
 </div>
 </div>
 
-		
-<div class="product-table1">
-<table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Brand</th>
-                  <th>Product</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-              </tbody>
-            </table>
-
-
-</div>
-<div class="product-table2">
-<table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Brand</th>
-                  <th>Product</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Marc Jacobs</td>
-                  <td>Green Wool Sweater</td>
-                  <td>$226</td>
-                </tr>
-              </tbody>
-            </table>
 
 						
 						
 					
 
-</div><br><br><br>
+<br><br><br>
 <% else %>
  	<!-- Carousel
 	    ================================================== -->

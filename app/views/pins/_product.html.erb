@@ -1,0 +1,10 @@
+
+               <tr>
+	  
+	  <td><%= pin.brand %></td>
+		<td><%= pin.description %></td>
+		<td><%= number_to_currency(pin.price * 2.5) if pin.price %></td>
+		<td><%= (pin.markdown - 42).strftime("%a, %B %d") if pin.markdown %></td>
+		
+	  
+</tr>

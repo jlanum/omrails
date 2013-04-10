@@ -21,7 +21,7 @@ Omrails::Application.routes.draw do
   get 'works' => 'pages#works'
   get 'show' => 'calendars#show'
   
-  match 'calculate' => 'pages#calculate'
+  match 'calculate' => 'pins#calculate'
   
 
 
