@@ -3,10 +3,11 @@
     
     <%= f.input :brand, as: :text, input_html: { rows: "1" } %>
     <%= f.input :description,  as: :text, input_html: { rows: "1" } %>
-		<%= f.input :price, label: 'Cost', as: :decimal, :precision => 4, :scale => 10, number_field: { rows: "1" } %>
+		<%= f.input :price, label: 'Cost', as: :decimal, :value=>number_to_currency(f.object.price, :unit=>''), number_field: { rows: "1" } %>
 		<%= f.input :markdown, label: 'Sell Date', as: :date %>
     
     
+		
 
 
   <div class="form-actions">

@@ -8,10 +8,10 @@
 	</div>
 	<div class="blee-section section-grey">
 		<div class='section-inline'>
-			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
-			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
-			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
-			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
+			<img src="/assets/sidebox.png" class="tumblr-inline">
+			<img src="/assets/sidebox.png" class="tumblr-inline">
+			<img src="/assets/sidebox.png" class="tumblr-inline">
+			<img src="/assets/sidebox.png" class="tumblr-inline">
 		</div>
 		<div class='section-inline'>
 			<div class='blee-section section-white' id='section-alert'>
@@ -22,17 +22,24 @@
 						<%= render current_user.pins.limit(5).order("markdown asc") %> 
 					</tbody>
 				</table>
+			<h4>Events</h4>
+			<table class="table">
+		  	<tbody>
+					<%= render @events %> 
+				</tbody>
+			</table>
 			</div>
-
 			<div class="blee-section section-white">
-				<%= link_to "new event", new_event_path %>
+				<% if admin_signed_in? %>
+<%= link_to "new event", new_event_path %>
+				<% end %>
 				<div id='calendar'></div>
 			</div>
 		</div>
 	</div>
 </section>
 
-						
+			
 						
 					
 

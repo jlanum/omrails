@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @pins = Pin.all
+    @events = Event.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
