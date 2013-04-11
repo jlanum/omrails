@@ -29,7 +29,7 @@
 
   /* Main marketing message and sign up button */
   .jumbotron {
-    margin: 20px 0;
+    margin: -10px 0 13px;
     text-align: center;
   }
   .jumbotron h1 {
@@ -587,29 +587,29 @@ color:#432060;
 					}
 					
 					.calculator > hr {
-					box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+						box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 					} 
 					
 					.tumblr-inline {
-					width:175px;
+						width:175px;
 					}
 					.product-table1 th {
-					background-color:#432060;
-					color:white;
+						background-color:#432060;
+						color:white;
 					}
 					.product-table3 {
-					width: 701px;
-					margin-left: 26%;
-					margin-top:-188px;
+						width: 701px;
+						margin-left: 26%;
+						margin-top:-188px;
 					}
 					.product-table3 th {
-					background-color:#432060;
-					color:white;
+						background-color:#432060;
+						color:white;
 					}
 					
 					.product-table-show th {
-					background-color:#432060;
-					color:white;
+						background-color:#432060;
+						color:white;
 					}
 					
 					.product-table2 th {
@@ -640,5 +640,50 @@ color: $gray;
 }
 
 }
+#home-section{
+	
+	.blee-section{
+	  padding:10px;
+	}
+	.section-grey{
+		background-color:#e5e5e5;
+	}
+	.section-white{
+		background-color:#fff;
+	}
+	#section-alert{
+		width: 710px;
+		display: inline-block;
+		margin: 0 0 10px;
+	}
+	
+	.section-inline{
+		display:inline-block;
+		margin:0 10px 0 0;
+		vertical-align:top;
+		position:relative;
+		
+		img{
+			display:block;
+			margin:0 0 10px;
+		}
+	}//end section-float
+	
+	.section-inline:last-child{
+		margin:0px;
+	}
+	img, #section-alert{
+		display:inline-block;
+		vertical-align:top;
+		
+		h4{
+			margin:0px;
+			display:block;
+			height:30px;
+			margin:0 0 10px;
+			line-height:30px;
+		}
+	}//end img, section-alert
+}//end home-section
 
 

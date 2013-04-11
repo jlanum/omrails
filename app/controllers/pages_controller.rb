@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   def home
-    
     @pins = Pin.all
     respond_to do |format|
       format.html # index.html.erb

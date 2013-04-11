@@ -1,29 +1,36 @@
 <% if user_signed_in? %>
-
-<div class="section store-name-section">
-<div class="jumbotron">
-<h1><font color="#432060"><%= current_user.name %></font></h1>
-<p class="muted">San Francisco, CA</p>
-</div>
-</div>
-<img src="/assets/tumblr_inline.png" class="tumblr-inline">
-<div class="product-table3">
-<h3>Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h3>
-
-<table class="table">
-              
-              <tbody>
-		<%= render current_user.pins.limit(5).order("markdown asc") %> 
-	</tbody>
-	</table>
+<section  id="home-section">
+	<div class="store-name-section">
+		<div class="jumbotron">
+			<h1><font color="#432060"><%= current_user.name %></font></h1>
+			<p class="muted">San Francisco, CA</p>
+		</div>
 	</div>
+	<div class="blee-section section-grey">
+		<div class='section-inline'>
+			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
+			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
+			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
+			<img src="/assets/tumblr_inline.png" class="tumblr-inline">
+		</div>
+		<div class='section-inline'>
+			<div class='blee-section section-white' id='section-alert'>
+				<h4>Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h4>
 
-<div class="calendar-width-margin section">
-	<%= link_to "new event", new_event_path %>
-<div id='calendar'></div>
-</div>
-</div>
+				<table class="table">
+			  	<tbody>
+						<%= render current_user.pins.limit(5).order("markdown asc") %> 
+					</tbody>
+				</table>
+			</div>
 
+			<div class="blee-section section-white">
+				<%= link_to "new event", new_event_path %>
+				<div id='calendar'></div>
+			</div>
+		</div>
+	</div>
+</section>
 
 						
 						
