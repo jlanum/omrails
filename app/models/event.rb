@@ -1,6 +1,8 @@
 class Event < ActiveRecord::Base
   attr_accessible :title, :starts_at, :ends_at, :all_day, :description
   
+  validates_length_of :description, :minimum => 3, :maximum => 60, :allow_blank => false
+  
   scope :between, lambda {|start_time, end_time|
     {:conditions => ["? < starts_at < ?", Event.format_date(start_time), Event.format_date(end_time)] }
   }
