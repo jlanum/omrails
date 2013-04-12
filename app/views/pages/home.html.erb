@@ -9,20 +9,19 @@
 	<div class="blee-section section-grey">
 		<div class='section-inline'>
 			<img src="/assets/sidebox.png" class="tumblr-inline">
-			<img src="/assets/sidebox.png" class="tumblr-inline">
-			<img src="/assets/sidebox.png" class="tumblr-inline">
-			<img src="/assets/sidebox.png" class="tumblr-inline">
+			<img src="/assets/sidebox_numbers.png" class="tumblr-inline">
+			<img src="/assets/sidebox_video.png" class="tumblr-inline">
 		</div>
 		<div class='section-inline'>
 			<div class='blee-section section-white' id='section-alert'>
-				<h4>Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h4>
+				<h4>Pricing Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h4>
 
 				<table class="table">
 			  	<tbody>
 						<%= render current_user.pins.limit(5).order("markdown asc") %> 
 					</tbody>
 				</table>
-			<h4>Events</h4>
+			<h4>Promotion Reminders</h4>
 			<table class="table">
 		  	<tbody>
 					<%= render @events %> 
@@ -31,10 +30,9 @@
 			</div>
 			<div class="blee-section section-white">
 			
-<%= link_to "new event", new_event_path %>
+<%= link_to "new event", new_event_path if admin_signed_in? %>
 			
-				<div id='calendar'></div>
-			</div>
+				
 		</div>
 	</div>
 </section>

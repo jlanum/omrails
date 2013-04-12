@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
     @pins = Pin.all
     @events = Event.all
+    @events = Event.limit(5).order("starts_at asc")
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
