@@ -32,7 +32,7 @@ class EventsController < ApplicationController
       format.json { render :json => @event }
     end
   end
-
+   before_filter :authenticate_admin!
   # GET /events/1/edit
   def edit
     @event = Event.find(params[:id])
