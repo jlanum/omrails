@@ -1,5 +1,6 @@
 class PinsController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :set_current_user
   # GET /pins
   # GET /pins.json
   def index
@@ -48,7 +49,7 @@ class PinsController < ApplicationController
   # POST /pins.json
   def create
     @pin = current_user.pins.new(params[:pin])
-
+    
     respond_to do |format|
       if @pin.save
         format.html { redirect_to @pin, notice: 'Product was successfully added.' }

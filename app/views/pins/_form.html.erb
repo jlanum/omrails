@@ -1,14 +1,13 @@
 <%= simple_form_for(@pin, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
-    
+    <%= f.input :validate_max_pins_have_been_reached, :as => :hidden %>
     <%= f.input :brand, as: :text, input_html: { rows: "1" } %>
     <%= f.input :description,  as: :text, input_html: { rows: "1" } %>
 		<%= f.input :price, label: 'Cost', as: :decimal, :value=>number_to_currency(f.object.price, :unit=>''), number_field: { rows: "1" } %>
 		<%= f.input :markdown, label: 'Sell Date', as: :date %>
     
-    
-		
-
+  
+      
 
   <div class="form-actions">
     <%= f.button :submit, "Add Product", class: "btn btn-purple" %>

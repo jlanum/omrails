@@ -15,7 +15,7 @@
 		<div class='section-inline'>
 			<div class='blee-section section-white' id='section-alert'>
 				<h4>Pricing Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h4>
-
+		
 				<table class="table">
 			  	<tbody>
 						<%= render current_user.pins.limit(5).order("markdown asc") %> 
@@ -29,7 +29,6 @@
 			</table>
 			</div>
 			<div class="blee-section section-white">
-			
 <%= link_to "new event", new_event_path if admin_signed_in? %>
 			
 				
@@ -37,7 +36,7 @@
 	</div>
 </section>
 
-			
+	
 						
 					
 
