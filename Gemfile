@@ -12,6 +12,7 @@ gem 'json'
 
 group :production do
   gem 'pg'
+  gem 'annotate', '2.5.0'
 end
   
 group :development, :test do

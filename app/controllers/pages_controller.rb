@@ -25,13 +25,8 @@ class PagesController < ApplicationController
   end
   
   
-  def calculate
-  
-   
-  
-    render :action => :pins_url
-  
-    end
+  def infographic
+  end
   
   
 end

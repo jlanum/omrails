@@ -193,7 +193,7 @@ color:#432060;
 			  margin: auto;
 	     }
 	    	.carousel-caption .btn-one {
-		      margin-top: 37px;
+		      margin-top: 71px;
 					width: 100px;
 					margin-left: 35px;
 					position: absolute;
@@ -203,7 +203,7 @@ color:#432060;
 		    }
 		
 		    .carousel-caption .btn-two {
-		      margin-top: 111px;
+		      margin-top: 103px;
 					width: 100px;
 					margin-left: 36px;
 					position: absolute;
@@ -212,7 +212,7 @@ color:#432060;
 		    }
 		
 		     .carousel-caption .btn-three {
-			      margin-top: 193px;
+			      margin-top: 174px;
 						width: 100px;
 						margin-left: 36px;
 						position: absolute;
@@ -647,6 +647,8 @@ color: $gray;
 }
 
 }
+
+
 #home-section{
 	
 	.blee-section{
@@ -662,6 +664,14 @@ color: $gray;
 		width: 710px;
 		display: inline-block;
 		margin: 0 0 10px;
+	}
+	
+	.table th, .table td {
+	padding: 2px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
 	}
 	
 	.section-inline{
@@ -693,4 +703,12 @@ color: $gray;
 	}//end img, section-alert
 }//end home-section
 
+.infographic {
+margin-left: 14%;
+	img {
+	   padding:1px;
+	   border:1px solid #999;
+	   background-color:#bdbdbd;
+	}
+}
 

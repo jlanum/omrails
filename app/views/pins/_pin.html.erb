@@ -8,7 +8,7 @@
 				<% end %>
 	  <td><%= pin.brand  %></td>
 		<td><%= pin.description %></td>
-		<td><%= number_to_currency(pin.price * 2.5) if pin.price %></td>
+		<td><%= pin.quantity %></td>
 		
 		<% if current_user = pin.user %>
 		<td> <%= link_to 'Edit', edit_pin_path(pin) %></td>

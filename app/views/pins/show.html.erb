@@ -5,7 +5,7 @@
                   <th>Store</th>
                   <th>Brand</th>
                   <th>Description</th>
-									<th>Price</th>
+									<th>Qty</th>
 									<th>Markdown</th>
                 </tr>
               </thead>
@@ -14,7 +14,7 @@
 	  <td><%= @pin.user.name %></td>
 	  <td><%= @pin.brand %></td>
 		<td><%= @pin.description %></td>
-		<td><%= number_to_currency(@pin.price * 2.5) %></td>
+		<td><%= @pin.quantity %></td>
 		<td><%= markprice = @pin.markdown - 42 %></td>
 	  </tbody>
   		

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130414162206) do
+ActiveRecord::Schema.define(:version => 20130415211203) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",               :default => "", :null => false
@@ -52,12 +52,14 @@ ActiveRecord::Schema.define(:version => 20130414162206) do
     t.string   "brand"
     t.integer  "price"
     t.date     "markdown"
+    t.integer  "quantity"
   end
 
   add_index "pins", ["brand"], :name => "index_pins_on_brand"
   add_index "pins", ["markdown"], :name => "index_pins_on_markdown"
   add_index "pins", ["price"], :name => "index_pins_on_price"
   add_index "pins", ["product"], :name => "index_pins_on_product"
+  add_index "pins", ["quantity"], :name => "index_pins_on_quantity"
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
 
   create_table "users", :force => true do |t|

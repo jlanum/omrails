@@ -8,8 +8,8 @@
 	</div>
 	<div class="blee-section section-grey">
 		<div class='section-inline'>
-			<img src="/assets/sidebox.png" class="tumblr-inline">
-			<img src="/assets/sidebox_numbers.png" class="tumblr-inline">
+			<img src="/assets/top-box.png" class="tumblr-inline">
+			<a href="/infographic"><img src="/assets/sidebox_2.png" class="tumblr-inline"></a>
 			<img src="/assets/sidebox_video.png" class="tumblr-inline">
 		</div>
 		<div class='section-inline'>
@@ -27,8 +27,7 @@
 					<%= render @events %> 
 				</tbody>
 			</table>
-			</div>
-			<div class="blee-section section-white">
+			
 <%= link_to "new event", new_event_path if admin_signed_in? %>
 			
 				
@@ -47,15 +46,15 @@
 	    <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
-	          <img src="/assets/Lead_Home.png" alt="">
+	          <img src="/assets/MST_Landing_Store.png" alt="">
 	          <div class="container">
 	            <div class="carousel-caption">
 	              <h2></h2>
-	              <%= link_to 'Free',  new_user_registration_path, class: "btn btn-large btn-purple btn-one" %>
+	              <%= link_to 'Learn More',  new_user_registration_path, class: "btn btn-large btn-purple btn-one" %>
 								<p class="lead"></p>
-								<%= link_to 'Basic',  new_user_registration_path, class: "btn btn-large btn-purple btn-two" %>
+								
 								<p class="lead"></p>
-								<%= link_to 'Professional',  new_user_registration_path, class: "btn btn-large btn-purple btn-three" %>
+								<%= link_to 'Email Me',  new_user_registration_path, class: "btn btn-large btn-purple btn-three" %>
 	            </div>
 	          </div>
 	        </div>

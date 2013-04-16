@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: events
+#
+#  id          :integer          not null, primary key
+#  title       :string(255)
+#  starts_at   :datetime
+#  ends_at     :datetime
+#  all_day     :boolean
+#  description :text
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
 class Event < ActiveRecord::Base
   attr_accessible :title, :starts_at, :ends_at, :all_day, :description
   
