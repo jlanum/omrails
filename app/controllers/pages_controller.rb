@@ -13,6 +13,7 @@ class PagesController < ApplicationController
   end
   
   def contact
+    @users = User.all
     end
     
   def pricing

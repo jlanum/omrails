@@ -1,6 +1,6 @@
 Omrails::Application.routes.draw do
 
-  devise_for :users
+  devise_for :users, :path_prefix => 'd'
 
   resource :calendar, :only => [:show]
 
@@ -8,7 +8,7 @@ Omrails::Application.routes.draw do
 
 
   resources :pins
-
+  resources :users
 
   
   
@@ -22,7 +22,8 @@ Omrails::Application.routes.draw do
   get 'show' => 'calendars#show'
   get 'index' => 'events#index'
   get 'infographic' => 'pages#infographic'
-  
+  get 'show' => 'users/show'
+
 
 
 end
