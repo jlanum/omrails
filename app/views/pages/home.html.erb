@@ -15,12 +15,15 @@
 		<div class='section-inline'>
 			<div class='blee-section section-white' id='section-alert'>
 				<h4>Pricing Alerts<%= link_to 'Add New', new_pin_path, class: "btn btn-medium btn-purple pull-right" %></h4>
-		
+		 <% if current_user.pins.empty? %>
+		You are not tracking any products yet. Product markdown tracking is the secret of successful retail stores everywhere. Start today! <br>
+		<% else %>
 				<table class="table">
 			  	<tbody>
 						<%= render current_user.pins.limit(5).order("markdown asc") %> 
 					</tbody>
 				</table>
+				<% end %>
 			<h4>Promotion Reminders</h4>
 			<table class="table">
 		  	<tbody>
